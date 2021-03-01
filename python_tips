@@ -1,0 +1,3 @@
+###按列读取文件,读入为csv格式，进而操作
+import pandas as pd
+data = pd.read_csv(" OSDO1012.txt",sep=',',header=None, names=['lat','lon','time','z']
