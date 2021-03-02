@@ -1,6 +1,25 @@
 ###按列读取文件,读入为csv格式，进而操作列
 import pandas as pd
-data = pd.read_csv(" OSDO1012.txt",sep=',',header=None, names=['lat','lon','time','z']
+data = pd.read_csv(" OSDO1012.txt",sep=',',header=None, names=['lat','lon','time','z']#读取csv
+df_snv = pd.read_table(result_file, header=None)#一般读取，默认\s分割
 ###检索某文件夹下特定名称文件
 import glob
 asm6a_list = glob.glob("%s/*.bed" % asm6a_dir)
+###连接路径
+import os
+os.path.join('111','222','333')  #111/222/333
+###返回路径最后的文件名
+import os
+path = '/Users/beazley/Data/data.csv'
+os.path.basename(path)
+'data.csv'
+###在控制台执行Linux命令
+import os
+os.system("bedtools intersect -a %s -b %s -c > %s" % (chunk, snv, result_file))
+###在控制台执行Linux命令，并获取输出
+import os
+os.popen("wc -l %s" % asm6a)
+###获取某值在字典中对应的键值
+def getDictKey_1(myDict, value):
+    return [k for k, v in myDict.items() if  value in v]
+key = getDictKey_1(ind_dict,asm6a_bed)
