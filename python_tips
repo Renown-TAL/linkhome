@@ -1,3 +1,6 @@
-###按列读取文件,读入为csv格式，进而操作
+###按列读取文件,读入为csv格式，进而操作列
 import pandas as pd
 data = pd.read_csv(" OSDO1012.txt",sep=',',header=None, names=['lat','lon','time','z']
+###检索某文件夹下特定名称文件
+import glob
+asm6a_list = glob.glob("%s/*.bed" % asm6a_dir)
