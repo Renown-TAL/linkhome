@@ -1,0 +1,4 @@
+##get seq form fasta with bed type site
+bedtools getfasta
+##change bed gtf version
+liftover
