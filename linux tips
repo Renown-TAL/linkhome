@@ -9,3 +9,7 @@ cutadapter
 ##seq mapping
 STAR
 Hisat2
+##download
+mwget
+axel
+ascp
