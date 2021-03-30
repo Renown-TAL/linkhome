@@ -2,8 +2,10 @@
 bedtools getfasta
 ##change bed gtf version
 liftover
-##remove the adpter
+##remove adapter
 Trim Galore
+Trimmomatic
+cutadapter
 ##seq mapping
 STAR
 Hisat2
